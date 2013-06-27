@@ -1,0 +1,5 @@
+All images sourced from http://www.sxc.hu
+
+photo1.jpg: http://www.sxc.hu/photo/1365070
+photo2.jpg: http://www.sxc.hu/photo/1361930
+photo3.jpg: http://www.sxc.hu/photo/1361930

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Flip pages</title>
+        <style>
+            .gallery {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .gallery img, .gallery div {
+                width: 100%;
+                background-size: cover;
+            }
+        </style>
+        <link rel="author" href="humans.txt">
+    </head>
+    <body>
+        <div class="gallery">
+        	<img src="swing_01.jpg" alt="" />
+        	<img src="swing_02.jpg" alt="" style="display:none" />
+        	<img src="swing_03.gif" alt="" style="display:none" />
+        </div>
+        <button class="next" type="button">Show Next Image</button>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/main2.js"></script>
+        <script>
+        	(function ($) {
+        		$('div.gallery').flipGallery();
+
+                $('button.next').click(function(event){
+                    event.preventDefault();
+                    // Trigger a page flip
+                    $('div.gallery').flipGallery('turn');
+                });
+        	}(this.jQuery));
+        </script>
+    </body>
+</html>
